@@ -9,6 +9,70 @@
   --border-color: rgba(25, 118, 210, 0.15);
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -17,6 +81,70 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 /* Minimalist centering and tic-tac-toe board */
 .ttt-centered {
@@ -29,6 +157,70 @@ body {
   padding-top: 90px;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 /* Game status */
 .ttt-status {
   font-size: 1.2rem;
@@ -38,6 +230,70 @@ body {
   min-height: 28px;
   letter-spacing: 0.01em;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 /* Board grid */
 .ttt-board {
@@ -52,10 +308,138 @@ body {
   margin-bottom: 24px;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .ttt-board-row {
   display: flex;
   gap: 0;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .ttt-square {
   width: 72px;
@@ -74,11 +458,139 @@ body {
   padding: 0;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .ttt-square:focus,
 .ttt-square:hover {
   background: #e3ecfa;
   border-color: var(--ttt-primary);
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 /* Action buttons */
 .ttt-action-buttons {
@@ -87,29 +599,413 @@ body {
   justify-content: center;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .ttt-primary-btn {
   background: var(--ttt-primary);
   color: #fff;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .ttt-primary-btn:hover {
   background: #105db1;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .ttt-accent-btn {
   background: var(--ttt-accent);
   color: #fff;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .ttt-accent-btn:hover {
   background: #b71c1c;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .navbar {
   background-color: var(--base-dark);
@@ -125,6 +1021,70 @@ body {
   z-index: 100;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
@@ -133,9 +1093,137 @@ body {
   gap: 8px;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .logo-symbol {
   color: var(--base-light);
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .container {
   max-width: 900px;
@@ -144,6 +1232,70 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .hero {
   padding-top: 120px;
@@ -155,11 +1307,139 @@ body {
   gap: 24px;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .subtitle {
   color: var(--base-light);
   font-weight: 500;
   font-size: 1.1rem;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .title {
   font-size: 3.5rem;
@@ -168,6 +1448,70 @@ body {
   margin: 0;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .description {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -175,6 +1519,70 @@ body {
   max-width: 600px;
   margin-bottom: 16px;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .btn {
   background-color: var(--base-light);
@@ -188,11 +1596,203 @@ body {
   transition: background-color 0.2s ease;
 }
 
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
+
 .btn:hover {
   background-color: #7691ff;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
 }
+
+/* ------- Snake and Ladder - minimal styles ------- */
+.snl-title {
+  font-size: 2.2rem;
+  color: var(--ttt-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+.snl-board {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.5px 12px 0 rgba(25, 118, 210, 0.07);
+  border: 2.5px solid var(--ttt-primary);
+  width: min(420px, 100vw - 32px);
+  overflow: hidden;
+}
+.snl-board-row {
+  display: flex;
+  gap: 0;
+}
+.snl-board-cell {
+  min-width: 36px;
+  max-width: 42px;
+  aspect-ratio: 1/1;
+  height: 36px;
+  max-height: 42px;
+  border: 1px solid var(--border-color);
+  font-size: 1.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  transition: background 0.16s;
+}
+.snl-board-cell[aria-label][tabindex='0']:focus {
+  outline: 1.5px solid var(--ttt-primary);
+}
+.snl-board-cell span {
+  z-index: 2;
+}
+.snl-dice-status {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .snl-board {
+    width: min(98vw, 352px);
+  }
+  .snl-board-cell {
+    font-size: 0.81rem;
+    min-width: 27px;
+    max-width: 33px;
+    height: 27px;
+    max-height: 33px;
+  }
+}
+
